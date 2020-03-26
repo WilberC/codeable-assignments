@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Rubik:400,500,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #544E4E;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.hero p {
+    font-size: 30px;
+    color: #A0A2A6;
+}
