@@ -1,0 +1,31 @@
+body {
+    margin: 67px 318px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% auto 20% 10%;
+    grid-gap: 24px 32px;
+}
+
+header {
+    grid-column: 2/3;
+    background: #C4C4C4;
+}
+
+.side-bar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: #FF0000;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background: #20E056;
+}
+
+footer {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background: #C4C4C4;
+}

@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% auto 10%;
+}
+
+nav {
+    grid-column: 1/3;
+    background: #FF5E5E;
+}
+
+.side-bar {
+    grid-row: 2/4;
+    background: #FAFF00;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: #20E056;
+}
+
+footer {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: #C4C4C4;
+}
