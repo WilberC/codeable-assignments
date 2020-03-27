@@ -2,10 +2,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /*margin: 15vh 0;*/
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 200px 70%;
 }
 
 header {
