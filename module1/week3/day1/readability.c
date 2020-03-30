@@ -7,19 +7,18 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    /*string text = ".?12:-Alice  ABC";*/
-    
     int text_len = strlen(text);
     int cant_letters = 0;
     int cant_words = 0;
     int cant_sentences = 0;
+    /* loop through str */
     for (int i = 0; i < text_len; i++)
     {
         if (isalpha(text[i]))
         {
             cant_letters += 1;
         }
-        if (isspace(text[i]) && !isspace(text[i-1]))
+        if (isspace(text[i]) && !isspace(text[i - 1]))
         {
             cant_words += 1;
         }
@@ -33,6 +32,7 @@ int main(void)
     float S = (cant_sentences * 100) / (float) cant_words ;
     float index = (0.0588 * L) - (0.296 * S) - 15.8;
     int final_index = (int) round(index);
+    /* Show Results */
     printf("==========\n");
     printf("Letters: %i\n", cant_letters);
     printf("Words: %i\n", cant_words);
