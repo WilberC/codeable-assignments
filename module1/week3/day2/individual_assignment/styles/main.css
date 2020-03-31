@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+body {
+    font-family: 'Overpass', sans-serif;
+    padding-top: 64px;
+    padding-bottom: 75px;
+    max-width: 1440px;
+    margin: 0;
+}
+
+/* Responsive Features */
+
+@media (max-width: 374px) {
+    /*For Mobil*/
+    body {
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-right: 25px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "main" "features";
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .product-description-main {
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        display: grid !important;
+        grid-area: main;
+        grid-template-columns: 100%;
+        grid-template-areas: "main-title" "main-description";
+    }
+
+    .product-description-left-container {
+        grid-area: main-title;
+        width: 100%;
+    }
+
+    .product-description-right-container {
+        grid-area: main-description;
+        display: grid !important;
+        grid-template-columns: 100% !important;
+        grid-gap: 0 !important;
+        grid-template-areas: "description-start" "description-record" "description-email" "description-config" !important;
+    }
+
+    .product-description-start {
+        grid-area: description-start;
+    }
+
+    .product-description-record {
+        grid-area: description-record;
+    }
+
+    .product-description-email {
+        grid-area: description-email;
+    }
+
+    .product-description-config {
+        grid-area: description-config;
+    }
+
+    .features-section {
+        margin: 0 !important;
+        display: grid !important;
+        grid-area: features;
+        grid-template-columns: 100%;
+        grid-template-areas: "features-description" "feature-img";
+    }
+
+    .features-section-hero-description {
+        margin: 0 !important;
+        display: block !important;
+        grid-area: features-description;
+    }
+
+    .features-section-hero {
+        max-width: 100% !important;
+        grid-area: feature-img;
+        margin: 0 auto 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    /*For tablet*/
+    body {
+        padding: 25px !important;
+        box-sizing: border-box
+    }
+
+    .product-description-main {
+        width: 100%;
+        margin: 0 auto !important;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .product-description-left-container {
+        margin-right: 40px !important;
+    }
+
+    .product-description-right-container {
+        grid-gap: 34px 15px !important;
+    }
+
+    .product-description-right-container .sub-title {
+        height: 48px;
+    }
+
+    .features-section {
+        margin: 0 !important;
+        display: grid !important;
+        grid-template-columns: 100%;
+        grid-template-areas: "feature-hero" "feature-description";
+        justify-content: center !important;
+        align-content: center !important;
+    }
+
+    .features-section-hero {
+        max-width: 100%;
+        grid-area: feature-hero;
+        margin: 0 auto 0 auto;
+    }
+
+    .features-section-hero-description {
+        margin: 0 !important;
+        grid-area: feature-description;
+    }
+}
+
+/* General Features */
+.title {
+    font-size: 36px;
+}
+
+.paragraph {
+    font-size: 17px;
+    color: #666666;
+}
+
+/* Main Part */
+.product-description-main {
+    width: 100%;
+    margin: 0 auto auto 75px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 75px;
+}
+
+.product-description-left-container {
+    margin-right: 104px;
+}
+
+.product-description-title {
+    margin-bottom: 30px;
+}
+
+.product-description-right-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 62px 128px;
+}
+
+/* Features Section */
+
+.features-section {
+    width: 100%;
+    margin: 0 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-section-hero {
+    width: 555px;
+}
+
+.features-section-hero-description {
+    margin-left: 105px;
+}
+
+.features-section-hero-description-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.features-section-hero-description .features-section-hero-description-item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.features-section-hero-description-item-container {
+    margin-left: 24px;
+}
+
+.features-section-hero-description-sub-title {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
